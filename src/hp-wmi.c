@@ -1127,7 +1127,7 @@ static int thermal_profile_setup(void)
 		 * firmware correctly sets the OEM variables
 		 */
 
-		err = omen_thermal_profile_set(tp);
+		err = omen_thermal_profile_set(HP_OMEN_THERMAL_PROFILE_PERFORMANCE);
 		if (err < 0)
 			return err;
 
